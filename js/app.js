@@ -70,7 +70,7 @@ export default class Sketch {
 			fragmentShader: fragment,
 			vertexShader: vertex,
 			side: THREE.DoubleSide,
-			wireframe: true,
+			// wireframe: true,
 			uniforms: {
 				uTime: { value: 0 },
 			},

@@ -47,7 +47,7 @@ void main() {
 
   float noiseMultiplier = clamp((abs(vUv.x - 0.5) - 0.3 ) * 3., 0., 1.);
   vPattern = vec3(noiseMultiplier);
-  float noise = pnoise(vPosition * 5.);
+  float noise = pnoise(vPosition * 5. + sin(uTime * 0.15));
 
   float displacement = noise * noiseMultiplier ;
   vec3 newPosition = vPosition + vNormal * displacement;
